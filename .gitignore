@@ -1,0 +1,63 @@
+# .gitignore
+
+# -------------------------------------------------------------
+# Node.js and NPM specific ignores
+# -------------------------------------------------------------
+node_modules/
+client/node_modules/
+server/node_modules/
+npm-debug.log* # npm debug logs
+yarn-debug.log* # yarn debug logs
+yarn-error.log* # yarn error logs
+.pnpm-store/              # pnpm package store
+.npm/                      # npm cache
+.yarn/                     # yarn cache
+
+# Environment Variables (CRITICAL for security)
+# These files contain sensitive information like API keys.
+# They should NEVER be committed to Git.
+.env                       # Common .env file (e.g., in server/ and client/)
+
+# Specific to create-react-app local environment variables in client/
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+server/.env
+
+# -------------------------------------------------------------
+# Build Artifacts
+# -------------------------------------------------------------
+client/build/              # React production build output
+server/build/              # If your server has a build step (e.g., TypeScript compilation)
+
+# -------------------------------------------------------------
+# Editor/IDE specific ignores
+# -------------------------------------------------------------
+.vscode/                   # VSCode settings and internal files
+.idea/                     # IntelliJ IDEA settings
+*.sublime-project          # Sublime Text project files
+*.sublime-workspace        # Sublime Text workspace files
+
+# Operating System specific files
+.DS_Store                  # macOS specific files
+Thumbs.db                  # Windows specific files
+
+# -------------------------------------------------------------
+# Logs and temporary files
+# -------------------------------------------------------------
+*.log                      # Any general .log files
+*.tmp                      # Any temporary files
+*.swp                      # Swap files (from some editors)
+
+# -------------------------------------------------------------
+# Firebase / Google Cloud Specific (CRITICAL for security)
+# -------------------------------------------------------------
+# This file contains sensitive service account credentials.
+# It should NEVER be committed to Git.
+server/EduRetrieve-ServiceAccount.json 
+
+# Firebase CLI specific logs and config
+firebase-debug.log
+.firebase/
+.firebaserc
