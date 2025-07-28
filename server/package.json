@@ -19,6 +19,7 @@
     "eduretrieve-monorepo": "file:..",
     "express": "^5.1.0",
     "firebase-admin": "^13.4.0",
+    "google-auth-library": "^10.2.0",
     "multer": "^2.0.2",
     "nodemailer": "^7.0.5",
     "react-markdown": "^10.1.0"
